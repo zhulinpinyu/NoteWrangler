@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="NoteWrangler">
   <head>
     <meta charset="utf-8">
     <title>Note Wrangler</title>
+    <link rel="stylesheet" href="css/application.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <div class="nav-wrapper has-dropdown">
+      <div class="nav-content">
+        <div class="wrapper">
+          <div class="nav-content-layout">
+            <div class="nav-list">
+              <a href="#/notes">Notes</a>
+              <a href="#/users">Users</a>
+            </div>
+          </div>
+
+          <div class="nav-content-layout">
+            <!-- <nw-session></nw-session>
+            <input class="form-input-search" type="text" placeholder="Search..." ng-model="search"> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <div class="hero"></div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+        <div ng-view></div>
+    </div>
 
     <!-- vendor -->
       <script src="javascript/vendor/jquery.js" charset="utf-8"></script>
